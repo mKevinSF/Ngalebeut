@@ -16,7 +16,7 @@ if(isset($_POST['order_btn'])){
    $number = $_POST['nomorhp'];
    $email = mysqli_real_escape_string($conn, $_POST['email']);
    $method = mysqli_real_escape_string($conn, $_POST['method']);
-   $address = mysqli_real_escape_string($conn, 'Jl.'. $_POST['alamat'].', '. $_POST['provinsi'].', '. $_POST['negara'].', '. $_POST['kabkot'].', '. $_POST['kecamatan'] . ' - '.$_POST['kodepos']);
+   $address = mysqli_real_escape_string($conn, 'Jl.'. $_POST['alamat'].', '. $_POST['provinsi'].', '. $_POST['kotkab'].', '. $_POST['kecamatan'].', '. $_POST['kelurahan'] . ' - '.$_POST['kodepos']);
    $placed_on = date('d-M-Y');
 
    $cart_total = 0;
@@ -101,48 +101,48 @@ if(isset($_POST['order_btn'])){
       <h3>place your order</h3>
       <div class="flex">
          <div class="inputBox">
-            <span>Nama penerima :</span>
-            <input type="text" name="nama" required placeholder="Masukkan nama anda">
+            <span>Nama Lengkap :</span>
+            <input type="text" name="nama" required placeholder="Masukkan Nama Anda">
          </div>
          <div class="inputBox">
-            <span>Nomor telepon :</span>
-            <input type="number" name="nomorhp" required placeholder="Masukkan nomor telepon penerima">
+            <span>Nomor Telepon :</span>
+            <input type="number" name="nomorhp" required placeholder="Masukkan Nomor Telepon">
          </div>
          <div class="inputBox">
             <span>Email:</span>
-            <input type="email" name="email" required placeholder="Masukkan email penerima">
+            <input type="email" name="email" required placeholder="Masukkan Email">
          </div>
          <div class="inputBox">
             <span>Metode pembayaran :</span>
             <select name="method">
-               <option value="cash on delivery">Cash on Delivery</option>
+               <option value="cash on delivery">Cash on Site</option>
                <option value="credit card">Credit Card</option>
-               <option value="paypal">Paypal</option>
+               <option value="paypal">Internet Banking</option>
             </select>
          </div>
          <div class="inputBox">
-            <span>Alamat penerima :</span>
-            <input type="text" name="alamat" required placeholder="Masukkan alamat penerima">
+            <span>Alamat :</span>
+            <input type="text" name="alamat" required placeholder="Masukkan Alamat">
          </div>
          <div class="inputBox">
             <span>Provinsi :</span>
-            <input type="text" name="provinsi" required placeholder="Masukkan provinsi penerima">
+            <input type="text" name="provinsi" required placeholder="Masukkan Provinsi">
          </div>
          <div class="inputBox">
-            <span>Negara :</span>
-            <input type="text" name="negara" required placeholder="Masukkan negara penerima">
+            <span>Kota / Kabupaten :</span>
+            <input type="text" name="kotkab" required placeholder="Masukkan Kota / Kabupaten">
          </div>
          <div class="inputBox">
-            <span>Kabupaten / kota :</span>
-            <input type="text" name="kabkot" required placeholder="Masukkan kabupaten / kota penerima">
+            <span>Kecamatan :</span>
+            <input type="text" name="kecamatan" required placeholder="Masukkan Kecamatan">
          </div>
          <div class="inputBox">
-            <span>Kecamatan / kelurahan :</span>
-            <input type="text" name="kecamatan" required placeholder="Masukkan kecamatan / kelurahan">
+            <span>Kelurahan :</span>
+            <input type="text" name="kelurahan" required placeholder="Masukkan Kelurahan">
          </div>
          <div class="inputBox">
-            <span>Kode pos :</span>
-            <input type="number" min="0" name="kodepos" required placeholder="Masukkan kode pos penerima">
+            <span>Kode Pos :</span>
+            <input type="number" min="0" name="kodepos" required placeholder="Masukkan Kode Pos">
          </div>
       </div>
       <input type="submit" value="Pesan sekarang" class="btn" name="order_btn">

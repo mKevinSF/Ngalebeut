@@ -92,8 +92,8 @@ if(isset($_GET['delete_all'])){
    <div class="cart-total">
       <p>Total : <span>Rp. <?php echo $grand_total; ?>/-</span></p>
       <div class="flex">
-         <a href="shop.php" class="option-btn">Lanjutkan shopping</a>
-         <a href="checkout.php" class="btn <?php echo ($grand_total > 1)?'':'disabled'; ?>">Pergi ke checkout</a>
+         <a href="shop.php" class="option-btn">Lanjutkan Memilih Service</a>
+         <a href="checkout.php" class="btn <?php echo ($grand_total > 1)?'':'disabled'; ?>">Pergi Ke Checkout</a>
       </div>
    </div>
 
