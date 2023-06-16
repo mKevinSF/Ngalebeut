@@ -330,6 +330,7 @@ section{
 
 .show-products .box-container .box img{
    height: 30rem;
+   width: 20rem;
 }
 
 .show-products .box-container .box .name{
