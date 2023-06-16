@@ -25,8 +25,8 @@ if(isset($_POST['order_btn'])){
    $cart_query = mysqli_query($conn, "SELECT * FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
    if(mysqli_num_rows($cart_query) > 0){
       while($cart_item = mysqli_fetch_assoc($cart_query)){
-         $cart_products[] = $cart_item['name'].' ('.$cart_item['quantity'].') ';
-         $sub_total = ($cart_item['price'] * $cart_item['quantity']);
+         $cart_products[] = $cart_item['name'].') ';
+         $sub_total = ($cart_item['price'] * 1);
          $cart_total += $sub_total;
       }
    }
@@ -81,10 +81,10 @@ if(isset($_POST['order_btn'])){
       $select_cart = mysqli_query($conn, "SELECT * FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
       if(mysqli_num_rows($select_cart) > 0){
          while($fetch_cart = mysqli_fetch_assoc($select_cart)){
-            $total_price = ($fetch_cart['price'] * $fetch_cart['quantity']);
+            $total_price = ($fetch_cart['price'] * 1);
             $grand_total += $total_price;
    ?>
-   <p> <?php echo $fetch_cart['name']; ?> <span>(<?php echo 'Rp. '.$fetch_cart['price'].'/-'.' x '. $fetch_cart['quantity']; ?>)</span> </p>
+   <p> <?php echo $fetch_cart['name']; ?> <span>(<?php echo 'Rp. '.$fetch_cart['price']; ?>)</span> </p>
    <?php
       }
    }else{
