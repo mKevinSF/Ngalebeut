@@ -12,9 +12,6 @@ if(!isset($user_id)){
 
 if(isset($_POST['update_cart'])){
    $cart_id = $_POST['cart_id'];
-   $cart_quantity = $_POST['cart_quantity'];
-   mysqli_query($conn, "UPDATE `cart` SET quantity = '$cart_quantity' WHERE id = '$cart_id'") or die('query failed');
-   $message[] = 'cart quantity updated!';
 }
 
 if(isset($_GET['delete'])){
@@ -71,10 +68,9 @@ if(isset($_GET['delete_all'])){
          <div class="price">Rp. <?php echo $fetch_cart['price']; ?>/-</div>
          <form action="" method="post">
             <input type="hidden" name="cart_id" value="<?php echo $fetch_cart['id']; ?>">
-            <input type="number" min="1" name="cart_quantity" value="<?php echo $fetch_cart['quantity']; ?>">
             <input type="submit" name="update_cart" value="update" class="option-btn">
          </form>
-         <div class="sub-total"> sub total : <span>Rp. <?php echo $sub_total = ($fetch_cart['quantity'] * $fetch_cart['price']); ?>/-</span> </div>
+         <div class="sub-total"> sub total : <span>Rp. <?php echo $sub_total = (1* $fetch_cart['price']); ?>/-</span> </div>
       </div>
       <?php
       $grand_total += $sub_total;

@@ -40,7 +40,7 @@ CREATE TABLE `cart` (
 -- Dumping data untuk tabel `cart`
 --
 
-INSERT INTO `cart` (`id`, `user_id`, `name`, `price`, `quantity`, `image`) VALUES
+INSERT INTO `cart` (`id`, `user_id`, `name`, `price`, `1`, `image`) VALUES
 (67, 4, 'Demon Slayer (Jap Ver) Vol. 23', 130000, 1, 'Demon Slayer (Jap Ver) Vol 23.jpg'),
 (76, 10, 'Demon Slayer (Jap Ver) Vol. 23', 130000, 1, 'Demon Slayer (Jap Ver) Vol 23.jpg');
 
