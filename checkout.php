@@ -46,6 +46,7 @@ if(isset($_POST['order_btn'])){
          mysqli_query($conn, "DELETE FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
       }
    }
+   echo '<script>alert("Pesanan Anda Sedang Diproses, Kembali ke Home")</script>';
    
 }
 
