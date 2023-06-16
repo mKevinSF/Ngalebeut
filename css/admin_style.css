@@ -331,6 +331,7 @@ section{
 .show-products .box-container .box img{
    height: 30rem;
    width: 20rem;
+   object-fit: cover;
 }
 
 .show-products .box-container .box .name{

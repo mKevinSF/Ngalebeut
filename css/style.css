@@ -394,6 +394,7 @@ section{
 .products .box-container .box .image{
    height: 30rem;
    width: 20rem;
+   object-fit: cover;
 }
 
 .products .box-container .box .name{
@@ -667,6 +668,7 @@ section{
 .shopping-cart .box-container .box img{
    height: 30rem;
    width: 20rem;
+   object-fit: cover;
 }
 
 .shopping-cart .box-container .box .name{
