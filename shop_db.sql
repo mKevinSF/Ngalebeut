@@ -46,19 +46,6 @@ INSERT INTO `cart` (`id`, `user_id`, `name`, `price`, `quantity`, `image`) VALUE
 
 -- --------------------------------------------------------
 
---
--- Struktur dari tabel `message`
---
-
-CREATE TABLE `message` (
-  `id` int(100) NOT NULL,
-  `user_id` int(100) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `number` varchar(12) NOT NULL,
-  `message` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
 -- --------------------------------------------------------
 
 --
@@ -216,6 +203,7 @@ ALTER TABLE `products`
 ALTER TABLE `users`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
