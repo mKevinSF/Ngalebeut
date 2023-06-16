@@ -8,7 +8,7 @@
 
    <div class="header-2">
       <div class="flex">
-         <a href="home.php" class="logo">Ngalebeut</a> 
+         <a href="home.php" class="logo"><img class="logo_banner" src="images/logo_ngalebeut.png"><a href="home.php" class="yes">Ngalebeut</a> 
 
          <nav class="navbar">
             <a href="home.php">Home</a>
