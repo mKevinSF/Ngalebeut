@@ -25,7 +25,7 @@ if(isset($_POST['order_btn'])){
    $cart_query = mysqli_query($conn, "SELECT * FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
    if(mysqli_num_rows($cart_query) > 0){
       while($cart_item = mysqli_fetch_assoc($cart_query)){
-         $cart_products[] = $cart_item['name'].') ';
+         $cart_products[] = $cart_item['name'];
          $sub_total = ($cart_item['price'] * 1);
          $cart_total += $sub_total;
       }
