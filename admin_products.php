@@ -138,7 +138,7 @@ if(isset($_POST['update_product'])){
       <?php
          }
       }else{
-         echo '<p class="empty">no products added yet!</p>';
+         echo '<p class="empty">no services added yet!</p>';
       }
       ?>
    </div>
