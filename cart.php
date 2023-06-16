@@ -10,10 +10,6 @@ if(!isset($user_id)){
    header('location:login.php');
 }
 
-if(isset($_POST['update_cart'])){
-   $cart_id = $_POST['cart_id'];
-}
-
 if(isset($_GET['delete'])){
    $delete_id = $_GET['delete'];
    mysqli_query($conn, "DELETE FROM `cart` WHERE id = '$delete_id'") or die('query failed');
@@ -65,12 +61,10 @@ if(isset($_GET['delete_all'])){
          <a href="cart.php?delete=<?php echo $fetch_cart['id']; ?>" class="fas fa-times" onclick="return confirm('delete this from cart?');"></a>
          <img src="uploaded_img/<?php echo $fetch_cart['image']; ?>" alt="">
          <div class="name"><?php echo $fetch_cart['name']; ?></div>
-         <div class="price">Rp. <?php echo $fetch_cart['price']; ?>/-</div>
          <form action="" method="post">
             <input type="hidden" name="cart_id" value="<?php echo $fetch_cart['id']; ?>">
-            <input type="submit" name="update_cart" value="update" class="option-btn">
          </form>
-         <div class="sub-total"> sub total : <span>Rp. <?php echo $sub_total = (1* $fetch_cart['price']); ?>/-</span> </div>
+         <div class="sub-total"><span>Rp. <?php echo $sub_total = (1* $fetch_cart['price']); ?>/-</span> </div>
       </div>
       <?php
       $grand_total += $sub_total;
