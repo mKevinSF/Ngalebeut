@@ -46,8 +46,7 @@ if(isset($_POST['order_btn'])){
          mysqli_query($conn, "DELETE FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
       }
    }
-   echo '<script>alert("Pesanan Anda Sedang Diproses, Kembali ke Home")</script>';
-   
+   echo '<script>alert("Pesanan Anda Sedang Diproses, Kembali ke Home"); window.location.href = "home.php";</script>';
 }
 
 ?>
@@ -146,7 +145,7 @@ if(isset($_POST['order_btn'])){
             <input type="number" min="0" name="kodepos" required placeholder="Masukkan Kode Pos">
          </div>
       </div>
-      <input type="submit" value="Pesan sekarang" class="btn" name="order_btn">
+      <input type="submit" value="Pesan Sekarang" class="btn" name="order_btn">
    </form>
 
 </section>

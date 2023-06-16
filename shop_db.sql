@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 16, 2023 at 04:32 PM
+-- Generation Time: Jun 16, 2023 at 04:50 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -36,14 +36,6 @@ CREATE TABLE `cart` (
   `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `cart`
---
-
-INSERT INTO `cart` (`id`, `user_id`, `name`, `price`, `quantity`, `image`) VALUES
-(84, 17, 'Membersihkan AC', 45000, 0, 'bersihinAC.jpg'),
-(85, 17, 'Mencuci Piring', 45000, 0, 'cuciPiring.jpg');
-
 -- --------------------------------------------------------
 
 --
@@ -63,6 +55,15 @@ CREATE TABLE `orders` (
   `placed_on` varchar(50) NOT NULL,
   `payment_status` varchar(20) NOT NULL DEFAULT 'pending'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`id`, `user_id`, `name`, `number`, `email`, `method`, `address`, `total_products`, `total_price`, `placed_on`, `payment_status`) VALUES
+(22, 17, 'User', '0812345678', 'user@mail.com', 'cash on delivery', 'Jl.Jalan User 1234, Bogor, Bogor, Asik Bogor, Asik Banget Bogor - 12345', ', Membersihkan AC, Mencuci Piring, All In One', 240000, '16-Jun-2023', 'Selesai'),
+(23, 17, 'user', '0812345678', 'user@mail.com', 'cash on delivery', 'Jl.Jalan 123, Bogor, Bogor, Bogor Asik, Bogor Asik Banget - 12345', ', Membersihkan Halaman', 45000, '16-Jun-2023', 'pending'),
+(24, 17, 'User', '0812345678', 'user@mail.com', 'cash on delivery', 'Jl.Jalan Bersama 12345, Bandung, Bandung, Andir, Kebon Jeruk - 123453', ', Membersihkan AC', 45000, '16-Jun-2023', 'pending');
 
 -- --------------------------------------------------------
 
@@ -148,13 +149,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `products`
