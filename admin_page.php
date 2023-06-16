@@ -84,7 +84,7 @@ if(!isset($admin_id)){
             $number_of_products = mysqli_num_rows($select_products);
          ?>
          <h3><?php echo $number_of_products; ?></h3>
-         <p>Produk Ditambahkan</p>
+         <p>Service Ditambahkan</p>
       </div>
 
       <div class="box">

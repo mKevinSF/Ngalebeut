@@ -101,14 +101,14 @@ if(isset($_POST['update_product'])){
 
 <section class="add-products">
 
-   <h1 class="title">PRODUK TOKO</h1>
+   <h1 class="title">SERVICE TOKO</h1>
 
    <form action="" method="post" enctype="multipart/form-data">
-      <h3>TAMBAH PRODUK</h3>
-      <input type="text" name="name" class="box" placeholder="Masukkan nama produk" required>
+      <h3>TAMBAH SERVICE</h3>
+      <input type="text" name="name" class="box" placeholder="Masukkan nama service" required>
       <input type="number" min="0" name="price" class="box" placeholder="Masukkan total harga" required>
       <input type="file" name="image" accept="image/jpg, image/jpeg, image/png" class="box" required>
-      <input type="submit" value="Tambah Produk" name="add_product" class="btn">
+      <input type="submit" value="Tambah Service" name="add_product" class="btn">
    </form>
 
 

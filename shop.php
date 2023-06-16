@@ -50,12 +50,12 @@ if(isset($_POST['add_to_cart'])){
 <?php include 'header.php'; ?>
 
 <div class="heading">
-   <h3>BUKU KAMI</h3>
+   <h3>SERVICE KAMI</h3>
 </div>
 
 <section class="products">
 
-   <h1 class="title">Produk Terbaru</h1>
+   <h1 class="title">Service Terbaru</h1>
 
    <div class="box-container">
 
@@ -77,7 +77,7 @@ if(isset($_POST['add_to_cart'])){
       <?php
          }
       }else{    
-         echo '<p class="empty">Belum ada produk yang ditambahkan!</p>';
+         echo '<p class="empty">Belum ada service yang tersedia!</p>';
       }
       ?>
    </div>

@@ -8,7 +8,7 @@
 
    <div class="header-2">
       <div class="flex">
-         <a href="home.php" class="logo">1000 BUKU</a> 
+         <a href="home.php" class="logo">Ngalebeut</a> 
 
          <nav class="navbar">
             <a href="home.php">Home</a>

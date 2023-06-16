@@ -52,15 +52,15 @@ if(isset($_POST['add_to_cart'])){
 <section class="home">
 
    <div class="content">
-      <h3>Toko Buku Online Assesment Of Learning Database</h3>
-      <p>Database ini terdapat 4 table yaitu cart, orders, products, dan users. Kita terinspirasi dari Tokopedia, namun bertemakan satu kategori saja yaitu buku.</p>
+      <h3>Ngalabeut</h3>
+      <p>Website ini memiliki Database dengan terdapat 4 table yaitu cart, orders, products, dan users. Kita terinspirasi dari Tokopedia, namun bertemakan satu kategori saja yaitu penyedia jasa service.</p>
    </div>
 
 </section>
 
 <section class="products">
 
-   <h1 class="title">Produk Terbaru</h1>
+   <h1 class="title">Service Terbaru</h1>
 
    <div class="box-container">
 
@@ -82,7 +82,7 @@ if(isset($_POST['add_to_cart'])){
       <?php
          }
       }else{
-         echo '<p class="empty">Belum ada produk yang terunggah!</p>';
+         echo '<p class="empty">Belum ada service yang terunggah!</p>';
       }
       ?>
    </div>

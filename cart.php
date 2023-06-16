@@ -55,7 +55,7 @@ if(isset($_GET['delete_all'])){
 
 <section class="shopping-cart">
 
-   <h1 class="title">Produk Ditambahkan</h1>
+   <h1 class="title">Service Ditambahkan</h1>
 
    <div class="box-container">
       <?php
