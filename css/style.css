@@ -140,7 +140,7 @@ section{
    align-items: center;
    justify-content: center;
    gap:1rem;
-   background: url(../images/gojo.jpg) no-repeat;
+   background: url(../images/home2.jpg) no-repeat;
    background-size: cover;
    background-position: center;
    text-align: center;
@@ -148,7 +148,7 @@ section{
 
 .heading h3{
    font-size: 5rem;
-   color:var(--white);
+   color:#4eb2d2;
    text-transform: uppercase;
 }
 
@@ -344,7 +344,7 @@ section{
 
 .home{
    min-height: 70vh;
-   background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/gojo.jpg) no-repeat;
+   background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/home2.jpg) no-repeat;
    background-size: cover;
    background-position: center;
    display: flex;
