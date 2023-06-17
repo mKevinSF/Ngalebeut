@@ -52,7 +52,7 @@ if(isset($_POST['add_to_cart'])){
 <section class="home">
 
    <div class="content">
-      <h3>Ngalabeut</h3>
+      <h3>Ngalebeut</h3>
       <p>Website ini memiliki Database dengan terdapat 4 table yaitu cart, orders, products, dan users. Kita terinspirasi dari Tokopedia, namun bertemakan satu kategori saja yaitu penyedia jasa service.</p>
    </div>
 
