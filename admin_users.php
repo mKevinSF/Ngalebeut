@@ -45,15 +45,17 @@ if(isset($_GET['delete'])){
       <?php
          $select_users = mysqli_query($conn, "SELECT * FROM `users`") or die('query failed');
          while($fetch_users = mysqli_fetch_assoc($select_users)){
+            if ($fetch_users['user_type'] != 'admin') {
       ?>
-      <div class="box">
-         <p> ID User   : <span><?php echo $fetch_users['id']; ?></span> </p>
-         <p> Username  : <span><?php echo $fetch_users['name']; ?></span> </p>
-         <p> Email     : <span><?php echo $fetch_users['email']; ?></span> </p>
-         <p> User Type : <span style="color:<?php if($fetch_users['user_type'] == 'admin'){ echo 'var(--orange)'; } ?>"><?php echo $fetch_users['user_type']; ?></span> </p>
-         <a href="admin_users.php?delete=<?php echo $fetch_users['id']; ?>" onclick="return confirm('Hapus pengguna ini?');" class="delete-btn">Hapus pengguna</a>
-      </div>
+               <div class="box">
+                  <p> ID User   : <span><?php echo $fetch_users['id']; ?></span> </p>
+                  <p> Username  : <span><?php echo $fetch_users['name']; ?></span> </p>
+                  <p> Email     : <span><?php echo $fetch_users['email']; ?></span> </p>
+                  <p> User Type : <span><?php echo $fetch_users['user_type']; ?></span> </p>
+                  <a href="admin_users.php?delete=<?php echo $fetch_users['id']; ?>" onclick="return confirm('Hapus pengguna ini?');" class="delete-btn">Hapus pengguna</a>
+               </div>
       <?php
+            };
          };
       ?>
    </div>
