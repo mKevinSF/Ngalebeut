@@ -17,4 +17,4 @@ Dengan Ngalebeut, diharapkan para user atau customer dapat memanfaatkan website 
 4. File yang telah diextract tersebut, dipindahkan ke file C:\XAMPP\htdocs
 5. Setelah tersimpan, silahkan untuk membuka Internet Browser seperti Firefox, Micrsoft Edge, Google Chrome dan sebagainya. (Untuk penggunaan yang nyaman, kami rekomendasikan untuk menggunakan Incognito Mode)
 6. Ketiklah link berikut https://phpmyadmin/localhost untuk mengakses PHPmyAdmin untuk mengimport file SQL yang kami sediakan. (shop_db.sql)
-7. Setelah mengimport, anda bisa mengakses website yang kami rancang dengan membuka link https://localhost/htdocs/ngalebutv2
+7. Setelah mengimport, anda bisa mengakses website yang kami rancang dengan membuka link https://localhost/htdocs/ngalebutv2.
